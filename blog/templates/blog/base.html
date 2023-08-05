@@ -8,13 +8,22 @@
     </head>
 
     <body>
+        <nav class="navbar">
+            <ul class="nav-links">
+              <li><a href ="#">Feed</a></li>
+              <li> <a href="#">Contact</a></li>
+              <li> <a href="#">About Us</a></li>
+              <li> <a class="active" href="{% url 'blog:post_list' %}">Home</a></li>
+            </ul>
+            
+        </nav>
         <div id="content">
             {% block content %}
             {% endblock %}
         </div>
 
         <div id="sidebar">
-            <h2>My Blog</h2>
+            <h2>Welcome to Divine's blog</h2>
             <p>
                 This is my blog. 
                 I've written {% total_posts %} posts so far

@@ -3,11 +3,37 @@ body {
     padding:0;
     font-family:helvetica, sans-serif; 
 }
-
+.navbar{
+    background-color: #00abff;
+}
 a { 
     color:#00abff;
     text-decoration:none; 
 }
+
+ul.nav-links{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#00abff;
+}
+ul.nav-links li {float: right;}
+
+ul.nav-links li a {
+  display: flex;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ul.nav-links li a:hover:not(.active) {background-color: #111;}
+
+ul.nav-links li a.active {background-color: #76226f;}
+
+ul.nav-links li.right {float: left;}
+
+
 
 h1 { 
     font-weight:normal;
@@ -23,15 +49,24 @@ h2 {
 #content { 
     float:left;
     width:60%;
-    padding:0 0 0 30px; 
+    padding:0 0 10px 30px; 
 }
 
+.posts{
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
 #sidebar { 
     float:right;
     width:30%;
-    padding:2px;
+    padding-left: 20px;
     background:#efefef; 
     height:100%;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    margin-top: 89px;
 }
 
 p.date { 
